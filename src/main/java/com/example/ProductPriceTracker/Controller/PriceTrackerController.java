@@ -20,7 +20,7 @@ import java.util.Map;
 public class PriceTrackerController {
 
     private static final Logger logger = LoggerFactory.getLogger(PriceTrackerController.class);
-    private static final String PRICES_JSON = "/static/prices.json";
+    public static final String PRICES_JSON = "/static/prices.json";
 
     @PostMapping("/alerts")
     public ResponseEntity<String> setPriceAlert(@RequestBody PriceAlertRequest request) {
